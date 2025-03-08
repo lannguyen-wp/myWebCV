@@ -1,0 +1,231 @@
+{
+  "personalInfo": {
+    "name": "Lan Nguyen",
+    "title": "Geospatial Analyst | Workflow Automation | Data Visualization"
+  },
+  "contact": {
+    "phone": "+1-(825)-365-5191",
+    "email": "hoanglan.nguyen@ucalgary.ca",
+    "address": "6555 54 St NW, Calgary, Alberta T3A 1R5",
+    "linkedin": "https://www.linkedin.com/in/lannguyen-wp/",
+    "googleScholar": "https://scholar.google.com/citations?user=gK8v6KAAAAAJ&hl=en"
+  },
+  "education": [
+    {
+      "degree": "Ph.D. in Geospatial Science and Engineering",
+      "institution": "South Dakota State University",
+      "location": "Brookings, SD",
+      "years": "2015 - 2019"
+    },
+    {
+      "degree": "M.S. in Environmental Science",
+      "institution": "Marshall University",
+      "location": "Huntington, WV",
+      "years": "2009 - 2012"
+    },
+    {
+      "degree": "M.S. in Physical and Applied Science",
+      "institution": "Marshall University",
+      "location": "Huntington, WV",
+      "years": "2009 - 2012"
+    },
+    {
+      "degree": "B.S. in Hydrology and Environment",
+      "institution": "Thuyloi University",
+      "location": "Hanoi, Vietnam",
+      "years": "2003 - 2008"
+    }
+  ],
+  "achievements": [
+    "10 Peer-review Articles and 1 Patent",
+    "NASA-MSU Professional Enhancement Awards"
+  ],
+  "skills": [
+    "Geospatial Data Analysis",
+    "Database and ETL Workflow",
+    "GIS software: ArcGIS, QGIS, ENVI...",
+    "Big Data and Google Earth Engine",
+    "Python / Arcade / R / JavaScript",
+    "Interactive Data Visualization",
+    "Spatial Statistics",
+    "Machine Learning / Deep Learning",
+    "Innovative Thinking",
+    "Leadership and Mentorship",
+    "Curriculum Design"
+  ],
+  "profile": "Experienced Geospatial Analyst with 10+ years of experience in GIS & RS, and geospatial data analytics across research and private sectors. Proven expertise in designing innovative solutions, and delivering actionable insights. Proficient in industry-standard tools like ESRI Suite, QGIS, GEE, Python, R. Recognized for impactful publications and a patented innovation, with a proven ability to lead teams and translate technical expertise into actionable, data-driven solutions.",
+  "workExperience": [
+    {
+      "title": "Geospatial Analyst",
+      "company": "Caslys Consulting Ltd.",
+      "location": "Lethbridge, AB, Canada",
+      "years": "2022 - 2025",
+      "responsibilities": [
+        "Consulted with internal teams and external clients to design and implement geospatial solutions tailored to business needs.",
+        "Assisted the preparation of proposals.",
+        "Created and maintained tools to generate various data products from Google Earth Engine."
+      ]
+    },
+    {
+      "title": "Sessional Instructor",
+      "company": "Department of Geomatics Engineering, University of Calgary",
+      "location": "Calgary, AB, Canada",
+      "years": "2022 - 2024",
+      "responsibilities": [
+        "Developed course materials and taught Introduction to Remote Sensing (ENGO435) and Geospatial Data Analytics (ENGG461)."
+      ]
+    },
+    {
+      "title": "Remote Sensing Scientist",
+      "company": "Farmers Edge",
+      "location": "Lethbridge, AB, Canada",
+      "years": "2021 - 2022",
+      "responsibilities": [
+        "Identified tillage practices using time series imagery from Sentinel-2 and Planet Scope."
+      ]
+    },
+    {
+      "title": "Postdoctoral Research Associate",
+      "company": "Department of Biological Science, University of Calgary",
+      "location": "Calgary, AB, Canada",
+      "years": "2019 - 2021",
+      "responsibilities": [
+        "Leveraged Sentinel-2 time series to map precise canola yields, and investigated how marginal habitats contribute to enhancing and stabilizing crop productivity."
+      ]
+    },
+    {
+      "title": "Graduate Research Assistant",
+      "company": "South Dakota State University",
+      "location": "Brookings, SD, USA",
+      "years": "2015 - 2019",
+      "responsibilities": [
+        "Developed multi-temporal land cover mapping and change detection methods to quantify the conversion of mixed-grass prairie into agricultural land in South Dakota from 2008 to 2018.",
+        "Leveraged AMSR-E/AMSR-2 and QuikSCAT microwave datasets to analyze urban dynamics of major cities across Northern America."
+      ]
+    },
+    {
+      "title": "GIS Analyst 1",
+      "company": "Rahall Transportation Institute",
+      "location": "Huntington, WV, USA",
+      "years": "2010 - 2014",
+      "responsibilities": [
+        "Contributed to various geospatial data management and analysis tasks, e.g., developing land-use master plans for reclaimed mining sites, geocoding business addresses, digitizing tax parcels."
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "title": "Satellite prediction of coastal hypoxia in the northern Gulf of Mexico",
+      "journal": "Remote Sensing of Environment",
+      "authors": "Li, Y., Robinson, S. V., Nguyen, L. H., & Liu, J.",
+      "year": "2023",
+      "link": "https://doi.org/10.1016/j.rse.2022.113346"
+    },
+    {
+      "title": "Tillage Identification and Verification Tool Using Satellite Time Series Imagery",
+      "journal": "Canadian Patent Database",
+      "authors": "Nguyen, L.",
+      "year": "2022",
+      "link": "https://brevets-patents.ic.gc.ca/opic-cipo/cpd/eng/patent/3190948/summary.html"
+    },
+    {
+      "title": "Effects of landscape complexity on crop productivity: An assessment from space",
+      "journal": "Agriculture, Ecosystems & Environment",
+      "authors": "Nguyen, L. H., Robinson, S. V., & Galpern, P",
+      "year": "2022",
+      "link": "https://doi.org/10.1016/j.agee.2021.107849"
+    },
+    {
+      "title": "Livin'on the edge: Precision yield data shows evidence of ecosystem services from field boundaries.",
+      "journal": "Agriculture, Ecosystems & Environment",
+      "authors": "Robinson, S., Nguyen, L.H., & Galpern, P.",
+      "year": "2022",
+      "link": "https://doi.org/10.1016/j.agee.2022.107956"
+    },
+    {
+      "title": "Medium-resolution multispectral satellite imagery in precision agriculture: mapping precision canola (Brassica napus L.) yield using Sentinel-2 time series",
+      "journal": "Precision Agriculture",
+      "authors": "Nguyen, L. H., Robinson, S., & Galpern, P.",
+      "year": "2022",
+      "link": "https://doi.org/10.1007/s11119-022-09874-7"
+    },
+    {
+      "title": "Land surface phenology in the highland pastures of montane Central Asia: Interactions with snow cover seasonality and terrain characteristics.",
+      "journal": "Remote Sensing of Environment",
+      "authors": "Tomaszewska, M.A., Nguyen, L.H., & Henebry, G.M.",
+      "year": "2020",
+      "link": "https://doi.org/10.1016/j.rse.2020.111675"
+    },
+    {
+      "title": "Characterizing land use/land cover using multi-sensor time series from the perspective of land surface phenology",
+      "journal": "Remote Sensing",
+      "authors": "Nguyen, L. H., & Henebry, G. M.",
+      "year": "2019",
+      "link": "https://doi.org/10.3390/rs11141677"
+    },
+    {
+      "title": "Improved Change Detection with Trajectory-Based Approach: Application to Quantify Cropland Expansion in South Dakota",
+      "journal": "Land",
+      "authors": "Nguyen, L.H., Joshi, D.R., & Henebry, G.M.",
+      "year": "2019",
+      "link": "https://doi.org/10.3390/land8040057"
+    },
+    {
+      "title": "Characterizing land cover/land use from multiple years of Landsat and MODIS time series: a novel approach using land surface phenology modeling and random forest classifiers.",
+      "journal": "Remote Sensing of Environment",
+      "authors": "Nguyen, L.H., Joshi, D.R., Clay, D.E., & Henebry, G.M.",
+      "year": "2019",
+      "link": "https://doi.org/10.1016/j.rse.2018.12.016"
+    },
+    {
+      "title": "Expansion of major urban areas in the US Great Plains from 2000 to 2009 using satellite scatterometer data",
+      "journal": "Remote Sensing of Environment",
+      "authors": "Nguyen, L.H., Nghiem, S.V., & Henebry, G. M.",
+      "year": "2018",
+      "link": "http://doi.org/10.1016/j.rse.2017.10.004"
+    },
+    {
+      "title": "Urban heat islands as viewed by microwave radiometers and thermal time indices.",
+      "journal": "Remote Sensing",
+      "authors": "Nguyen, L.H., & Henebry, G.M.",
+      "year": "2016",
+      "link": "http://doi.org/10.3390/rs8100831"
+    }
+  ],
+  "references": [
+    {
+      "name": "Dr. Geoffrey Henebry",
+      "title": "Dissertation Advisor",
+      "position": "Professor",
+      "institution": "Michigan State University",
+      "location": "East Lansing, Michigan 48824, USA",
+      "phone": "+1-(517)-355-3899",
+      "email": "henebryg@msu.edu"
+    },
+    {
+      "name": "Dr. Paul Galpern",
+      "title": "Postdoctoral Advisor",
+      "position": "Associate Professor",
+      "institution": "University of Calgary",
+      "location": "Calgary, Alberta T3B 4S3, CA",
+      "phone": "+1-(403)-220-7436",
+      "email": "paul.galpern@ucalgary.ca"
+    },
+    {
+      "name": "Dr. Samuel Robinson",
+      "position": "Research Scientist",
+      "institution": "Ducks Unlimited Canada",
+      "location": "P.O. Box 1160, Stonewall, Manitoba R0C 2Z0, CA",
+      "phone": "+1-(604)-314-1832",
+      "email": "s_robinson@ducks.ca"
+    },
+    {
+      "name": "Ms. Luanne Richardson",
+      "position": "Project Manager / Owner",
+      "institution": "Caslys Consulting Ltd.",
+      "location": "Saanichton, British Columbia V8M 2C2, CA",
+      "phone": "+1-(250)-652-9268",
+      "email": "lrichardson@caslys.ca"
+    }
+  ]
+}
