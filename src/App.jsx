@@ -7,6 +7,7 @@ import References from './components/References.jsx';
 import Profile from './components/Profile.jsx';
 import WorkExperience from './components/WorkExperience.jsx';
 import Publications from './components/Publications.jsx';
+import ExportToPDF from './components/ExportToPDF.jsx';
 import { LAYOUT, TEXT } from './styles/globalStyles.jsx';
 
 const App = () => {
@@ -34,33 +35,31 @@ const App = () => {
   return (
     <div className={LAYOUT.pageContainer}>
         <div id="cv-content" className={LAYOUT.container}>
-
-            {/* First-row: two column layout  */}
-            <div className={LAYOUT.flexRow}>
-                <div className={LAYOUT.container_c1}>
+            {/* Using grid layout with classes from globalStyles */}
+            <div className={LAYOUT.gridContainer}>
+                {/* First row: two column layout */}
+                <div className={LAYOUT.gridColLeft}>
+                    <ExportToPDF />
                 </div>
-                <div className={LAYOUT.container_c2r1}>
+                <div className={LAYOUT.gridColRightHeader}>
                     <h1 className={TEXT.myname}>{resumeData.personalInfo.name}</h1>
                     <p className={TEXT.mykeywords}>{resumeData.personalInfo.title}</p>
                 </div>
-            </div>
-
-            {/* Second row: two column layout  */}
-            <div className={LAYOUT.flexRow}>
-                <div className={LAYOUT.container_c1}>
+                
+                {/* Second row: two column layout */}
+                <div className={LAYOUT.gridColLeft}>
                     <Contact contact={resumeData.contact} />
                     <Education education={resumeData.education} />
                     <Achievements achievements={resumeData.achievements} />
                     <Skills skills={resumeData.skills} />
                     <References references={resumeData.references} />
                 </div>
-                <div className={LAYOUT.container_c2r2}>
+                <div className={LAYOUT.gridColRightContent}>
                     <Profile profile={resumeData.profile} />
                     <WorkExperience workExperience={resumeData.workExperience} />
                     <Publications publications={resumeData.publications} />
                 </div>
             </div>
-
         </div>
     </div>
   );

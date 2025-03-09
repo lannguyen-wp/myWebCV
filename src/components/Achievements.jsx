@@ -6,7 +6,7 @@ import { ACHIEVEMENTS } from '../styles/componentStyles.jsx';
 const AchievementItem = ({ iconType, description }) => (
   <div className={ACHIEVEMENTS.achievementItem}>
     <Icon type={iconType} className={ACHIEVEMENTS.achievementIcon} />
-    <span>{description}</span>
+    <span className={ACHIEVEMENTS.achievementDescription}>{description}</span>
   </div>
 );
 

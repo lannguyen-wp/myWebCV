@@ -1,87 +1,95 @@
+import { baseLAYOUT, baseTEXT, combineStyles, LAYOUT, TEXT } from "./globalStyles";
+
+const hyperlink = combineStyles(baseTEXT.textURL, "");
+
 // Contact component styles
 export const CONTACT = {
-  contactContainer: "text-white w-full",
-  contactGrid: "grid grid-col gap-2",
-  contactItem: "flex items-start",
-  contactIcon: "w-5 h-5 mr-2 flex-shrink-0",
-  contactLink: "text-white underline hover:text-blue-500",
-  contactLinkSeparator: "ml-1 mr-1"
+  contactContainer: LAYOUT.sectionContainer_left,
+  contactGrid: LAYOUT.gridItem,
+  contactItem: baseLAYOUT.align_fc,
+  //within item => icon and description
+  contactIcon: LAYOUT.iconStyle,
+  contactDescription: "",
+  contactLink: hyperlink,
+  contactLinkSeparator: "mr-2",
 };
 
 // Education component styles
 export const EDUCATION = {
-  educationContainer: "text-white w-full mt-4",
-  educationGrid: "grid grid-col gap-2",
-  educationDegree: "font-bold text-lg",
-  educationPeriod: "flex items-center text-white",
-  educationIcon: "w-4 h-4 mr-1 text-white"
+  educationContainer: LAYOUT.sectionContainer_left,
+  educationGrid: LAYOUT.gridItem,
+  educationItem: "",
+  //within item => degree, period, institution
+  educationDegree: baseTEXT.heading5,
+  educationPeriod: baseLAYOUT.align_fc,
+  educationIcon: LAYOUT.iconStyle,
 };
 
 // Achievements component styles
 export const ACHIEVEMENTS = {
-  achievementContainer: "text-white w-full mt-4",
-  achievementGrid: "grid grid-col gap-2",
-  achievementItem: "flex items-start",
-  achievementIcon: "w-5 h-5 mr-2 flex-shrink-0"
+  achievementContainer: LAYOUT.sectionContainer_left,
+  achievementGrid: LAYOUT.gridItem,
+  achievementItem: baseLAYOUT.align_fc,
+  //winthin item => icon and description
+  achievementIcon: LAYOUT.iconStyle,
+  achievementDescription: "",
 };
 
 // Skills component styles
 export const SKILLS = {
-  skillContainer: "text-white w-full mt-4",
-  skillGrid: "grid grid-col gap-2",
-  skillItem: "flex items-start"
-};
-
-// Profile component styles
-export const PROFILE = {
-  profileContainer: "w-full",
-  profileText: "text-gray-700"
-};
-
-// Work Experience component styles
-export const WORK_EXPERIENCE = {
-  workContainer: "w-full mt-4",
-  workGrid: "grid grid-col gap-2",
-  workHeader: "flex justify-between items-baseline",
-  workTitle: "font-bold text-lg text-[#011962]",
-  workYears: "flex items-center text-black",
-  workIcon: "w-4 h-4 mr-1 text-black",
-  workSubheader: "flex justify-between items-baseline",
-  workCompany: "italic",
-  workLocation: "flex items-center text-black",
-  workList: "list-disc pl-5 mt-1 text-black",
-  workListItem: "mb-0"
-};
-
-// Publications component styles
-export const PUBLICATIONS = {
-  publicationContainer: "w-full mt-4",
-  publicationGrid: "grid grid-col gap-2",
-  publicationItem: "mb-0 pb-2 border-b border-dashed border-gray-300 w-full", // Added border styling
-  publicationTitle: "font-bold text-lg text-[#011962]",
-  publicationJournal: "text-orange-500 font-bold",
-  publicationAuthors: "italic",
-  publicationFooter: "flex items-center justify-between",
-  publicationLink: "flex items-center",
-  publicationLinkText: "text-black underline hover:text-blue-500",
-  publicationYear: "flex items-center text-black",
-  publicationIcon: "w-4 h-4 mr-1 text-black"
+  skillContainer: LAYOUT.sectionContainer_left,
+  skillList: LAYOUT.listStyle,
+  skillDescription: "",
 };
 
 // References component styles
 export const REFERENCES = {
-  referenceContainer: "text-white w-full mt-4",
-  referenceGrid: "grid grid-cols-1 gap-4",
-  referenceName: "font-bold text-lg",
+  referenceContainer: LAYOUT.sectionContainer_left,
+  referenceGrid: LAYOUT.gridItem,
+  referenceName: baseTEXT.heading5,
   referenceTitle: "italic",
-  referencePosition: "italic",
   referenceInstitution: "",
   referenceLocation: "",
-  referenceContact: "mt-1",
-  referencePhone: "flex items-center",
-  referenceEmail: "flex items-center",
-  referenceIcon: "w-4 h-4 mr-1",
-  referenceLink: "text-white underline hover:text-blue-500"
+  referenceContact: "mt-0",
+  referencePhone: baseLAYOUT.align_fc,
+  referenceEmail: baseLAYOUT.align_fc,
+  referenceIcon: LAYOUT.iconStyle,
+  referenceLink: hyperlink,
+};
+
+// Profile component styles
+export const PROFILE = {
+  profileContainer: LAYOUT.sectionContainer_right,
+  profileText: "",
+};
+
+// Work Experience component styles
+export const WORK_EXPERIENCE = {
+  workContainer: LAYOUT.sectionContainer_right,
+  workGrid: LAYOUT.gridItem,
+  workItem: "",
+  //winthin item => title + time, company, job descriptions
+  workTitle: baseTEXT.heading5,
+  workIcon: LAYOUT.iconStyle,
+  workCompany: "italic",
+  workList: LAYOUT.listStyle,
+  workDescription: "",
+};
+
+// Publications component styles
+export const PUBLICATIONS = {
+  publicationContainer: LAYOUT.sectionContainer_right,
+  publicationGrid: LAYOUT.gridItem,
+  publicationItem: "mb-0 pb-2 border-b border-dashed border-gray-300 w-full",
+  //winthin items => title, journal, authors, footer: link and year
+  publicationTitle: baseTEXT.heading5,
+  publicationJournal: "text-orange-500 font-bold",
+  publicationAuthors: "italic",
+  publicationFooter: combineStyles(baseLAYOUT.align_fc, "justify-between"),
+  publicationLink: baseLAYOUT.align_fc,
+  publicationLinkText: hyperlink,
+  publicationYear: baseLAYOUT.align_fc,
+  publicationIcon: LAYOUT.iconStyle,
 };
 
 // Combined exports

@@ -5,7 +5,8 @@
   "type": "module",
   "dependencies": {
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "react-to-print": "^2.14.13"
   },
   "scripts": {
     "dev": "vite",

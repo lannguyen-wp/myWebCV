@@ -4,7 +4,7 @@ import { EDUCATION } from '../styles/componentStyles.jsx';
 
 // Individual education item component
 const EducationItem = ({ degree, period, institution, location, years }) => (
-  <div>
+  <div className={EDUCATION.educationItem}>
     <h3 className={EDUCATION.educationDegree}>{degree}</h3>
     <div className={EDUCATION.educationPeriod}>
       <Icon type="calendar" className={EDUCATION.educationIcon} />

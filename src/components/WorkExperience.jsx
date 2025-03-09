@@ -4,24 +4,24 @@ import { WORK_EXPERIENCE } from '../styles/componentStyles.jsx';
 
 // Individual work item component
 const WorkItem = ({ title, company, location, years, responsibilities }) => (
-  <div>
-    <div className={WORK_EXPERIENCE.workHeader}>
+  <div className={WORK_EXPERIENCE.workItem}>
+    <div className="flex justify-between items-baseline">
       <h3 className={WORK_EXPERIENCE.workTitle}>{title}</h3>
-      <div className={WORK_EXPERIENCE.workYears}>
+      <div className="flex items-center">
         <Icon type="calendar" className={WORK_EXPERIENCE.workIcon} />
         <span>{years}</span>
       </div>
     </div>
-    <div className={WORK_EXPERIENCE.workSubheader}>
+    <div className="flex justify-between items-baseline">
       <p className={WORK_EXPERIENCE.workCompany}>{company}</p>
-      <div className={WORK_EXPERIENCE.workLocation}>
+      <div className="flex items-center">
         <Icon type="location" className={WORK_EXPERIENCE.workIcon} />
         <span>{location}</span>
       </div>
     </div>
     <ul className={WORK_EXPERIENCE.workList}>
       {responsibilities.map((responsibility, index) => (
-        <li key={index} className={WORK_EXPERIENCE.workListItem}>
+        <li key={index} className={WORK_EXPERIENCE.workDescription}>
           {responsibility}
         </li>
       ))}

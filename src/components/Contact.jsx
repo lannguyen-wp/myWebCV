@@ -6,7 +6,7 @@ import { CONTACT } from '../styles/componentStyles.jsx';
 const ContactItem = ({ iconType, description }) => (
   <div className={CONTACT.contactItem}>
     <Icon type={iconType} className={CONTACT.contactIcon} />
-    <span>{description}</span>
+    <span className={CONTACT.contactDescription}>{description}</span>
   </div>
 );
 
