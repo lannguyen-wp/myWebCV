@@ -6,7 +6,7 @@
   "contact": [
     {
       "iconType": "phone",
-      "description": "+1-(825)-365-5191"
+      "description": "(825)-365-5191"
     },
     {
       "iconType": "email",
@@ -14,7 +14,7 @@
     },
     {
       "iconType": "location",
-      "description": "6555 54 St NW, Calgary, Alberta T3A 1R5"
+      "description": "Calgary, Alberta, Canada"
     },
     {
       "iconType": "link",
@@ -29,25 +29,19 @@
   ],
   "education": [
     {
-      "degree": "Ph.D. in Geospatial Science and Engineering",
+      "degree": ["Ph.D. in Geospatial Science and Engineering"],
       "institution": "South Dakota State University",
       "location": "Brookings, SD",
       "years": "2015 - 2019"
     },
     {
-      "degree": "M.S. in Environmental Science",
+      "degree": ["M.S. in Environmental Science", "M.S. in Physical and Applied Science"],
       "institution": "Marshall University",
       "location": "Huntington, WV",
       "years": "2009 - 2012"
     },
     {
-      "degree": "M.S. in Physical and Applied Science",
-      "institution": "Marshall University",
-      "location": "Huntington, WV",
-      "years": "2009 - 2012"
-    },
-    {
-      "degree": "B.S. in Hydrology and Environment",
+      "degree": ["B.S. in Hydrology and Environment"],
       "institution": "Thuyloi University",
       "location": "Hanoi, Vietnam",
       "years": "2003 - 2008"
@@ -222,7 +216,7 @@
       "name": "Dr. Geoffrey Henebry",
       "position": "Professor - Dissertation Advisor",
       "institution": "Michigan State University",
-      "location": "East Lansing, Michigan 48824, USA",
+      "location": "East Lansing, Michigan, USA",
       "phone": "+1-(517)-355-3899",
       "email": "henebryg@msu.edu"
     },
@@ -230,7 +224,7 @@
       "name": "Dr. Paul Galpern",
       "position": "Associate Professor - Postdoctoral Advisor",
       "institution": "University of Calgary",
-      "location": "Calgary, Alberta T3B 4S3, CA",
+      "location": "Calgary, Alberta, CA",
       "phone": "+1-(403)-220-7436",
       "email": "paul.galpern@ucalgary.ca"
     },
@@ -238,7 +232,7 @@
       "name": "Dr. Samuel Robinson",
       "position": "Research Scientist",
       "institution": "Ducks Unlimited Canada",
-      "location": "P.O. Box 1160, Stonewall, Manitoba R0C 2Z0, CA",
+      "location": "Stonewall, Manitoba, CA",
       "phone": "+1-(604)-314-1832",
       "email": "s_robinson@ducks.ca"
     },
@@ -246,7 +240,7 @@
       "name": "Ms. Luanne Richardson",
       "position": "Project Manager / Owner",
       "institution": "Caslys Consulting Ltd.",
-      "location": "Saanichton, British Columbia V8M 2C2, CA",
+      "location": "Saanichton, British Columbia, CA",
       "phone": "+1-(250)-652-9268",
       "email": "lrichardson@caslys.ca"
     }

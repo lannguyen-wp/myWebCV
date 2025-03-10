@@ -1,11 +1,19 @@
 import React from 'react';
-import { SectionTitle, Icon } from '../styles/globalStyles.jsx';
-import { EDUCATION } from '../styles/componentStyles.jsx';
+import { SectionTitle, EDUCATION, Icon } from '../styles/Styling.jsx';
 
 // Individual education item component
 const EducationItem = ({ degree, period, institution, location, years }) => (
   <div className={EDUCATION.educationItem}>
-    <h3 className={EDUCATION.educationDegree}>{degree}</h3>
+    {/* Handle both string and array degrees */}
+    {Array.isArray(degree) ? (
+      <div className={EDUCATION.educationDegreeContainer}>
+        {degree.map((degreeItem, index) => (
+          <h3 key={index} className={EDUCATION.educationDegree}>{degreeItem}</h3>
+        ))}
+      </div>
+    ) : (
+      <h3 className={EDUCATION.educationDegree}>{degree}</h3>
+    )}
     <div className={EDUCATION.educationPeriod}>
       <Icon type="calendar" className={EDUCATION.educationIcon} />
       <span>{years || period}</span>

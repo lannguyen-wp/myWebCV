@@ -1,6 +1,5 @@
 import React from 'react';
-import { SectionTitle, Icon } from '../styles/globalStyles.jsx';
-import { WORK_EXPERIENCE } from '../styles/componentStyles.jsx';
+import { SectionTitle, WORK_EXPERIENCE, Icon } from '../styles/Styling.jsx';
 
 // Individual work item component
 const WorkItem = ({ title, company, location, years, responsibilities }) => (
@@ -34,7 +33,7 @@ const WorkExperience = ({ workExperience }) => {
   
   return (
     <div className={WORK_EXPERIENCE.workContainer}>
-      <SectionTitle position="right">Work Experience</SectionTitle>
+      <SectionTitle position="left">Work Experience</SectionTitle>
       <div className={WORK_EXPERIENCE.workGrid}>
         {workExperience.map((item, index) => (
           <WorkItem 

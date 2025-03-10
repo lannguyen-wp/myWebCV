@@ -1,24 +1,27 @@
 import React from 'react';
-import { SectionTitle } from '../styles/globalStyles.jsx';
-import { SKILLS } from '../styles/componentStyles.jsx';
+import { SectionTitle, SKILLS } from '../styles/Styling.jsx';
 
 // Individual skill item
+const SkillItem = ({ skill }) => (
+  <div className={SKILLS.skillItem}>
+    <span className="mr-2">•</span>
+    <span>{skill}</span>
+  </div>
+);
+
 const Skills = ({ skills }) => {
   if (!skills || skills.length === 0) return null;
   
   return (
     <div className={SKILLS.skillContainer}>
       <SectionTitle>Skills</SectionTitle>
-      <ul className={SKILLS.skillList}>
+      <div className={SKILLS.skillGrid}>
         {skills.map((skill, index) => (
-          <li key={index} className={SKILLS.skillDescription}>
-            {skill}
-          </li>
+          <SkillItem key={index} skill={skill} />
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
-
 
 export default Skills;

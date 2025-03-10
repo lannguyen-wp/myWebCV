@@ -1,13 +1,12 @@
 import React from 'react';
-import { SectionTitle } from '../styles/globalStyles.jsx';
-import { PROFILE } from '../styles/componentStyles.jsx';
+import { SectionTitle, PROFILE } from '../styles/Styling.jsx';
 
 const Profile = ({ profile }) => {
   if (!profile) return null;
   
   return (
     <div className={PROFILE.profileContainer}>
-      <SectionTitle position="right">Profile</SectionTitle>
+      <SectionTitle position="left">Profile</SectionTitle>
       <p className={PROFILE.profileText}>
         {profile.description}
       </p>

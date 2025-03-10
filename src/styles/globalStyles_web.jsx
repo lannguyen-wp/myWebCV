@@ -49,8 +49,8 @@ export const combineStyles = (...styles) => {
 
 // Layout styles - must use hardcoded values for Tailwind JIT compiler to work
 export const baseLAYOUT = {
-  gridColLeft: "col-span-1 flex flex-col p-4",
-  gridColRight: "col-span-2 flex flex-col p-4",
+  gridColLeft: "col-span-1 flex flex-col pr-2 pl-4",
+  gridColRight: "col-span-2 flex flex-col pr-4 pl-2",
   align_fs: "flex items-start",
   align_fc: "flex items-center",
 };
@@ -69,7 +69,7 @@ export const baseTEXT = {
 export const LAYOUT = {
   // Main container styles
   pageContainer: "flex justify-center bg-gray-200 py-4",
-  container: "max-w-[1200px] w-full bg-white overflow-hidden",
+  container: "w-[1200px] bg-white overflow-hidden",
   // Grid layout styles for consistent column widths
   gridContainer: "grid grid-cols-3",
   gridItem: "grid grid-col gap-2",
@@ -80,22 +80,16 @@ export const LAYOUT = {
   sectionContainer_left: combineStyles(baseTEXT.textBase, "text-white w-full mt-4"),
   sectionContainer_right: combineStyles(baseTEXT.textBase, "text-[#011962] w-full mt-4"),
   // Item styles
-  iconStyle: "w-5 h-5 mr-2 flex-shrink-0",
+  iconStyle: "w-4 h-4 mr-2 flex-shrink-0",
   listStyle: "list-disc pl-5 mt-1",
 };
 
-const sectionTitle = combineStyles(baseTEXT.heading3, "border-b-4 pb-2 mb-2 w-full");
+const sectionTitle = combineStyles(baseTEXT.heading2, "border-b-4 pb-2 mb-2 w-full");
 export const TEXT = {
   myname: combineStyles(baseTEXT.heading2, "text-[#011962]"),
-  mykeywords: combineStyles(baseTEXT.heading4, "text-blue-500 mt-4"),
+  mykeywords: combineStyles(baseTEXT.heading4, "text-blue-500 mt-2 mb-2"),
   sectionTitle_left: combineStyles(sectionTitle, "text-white"),
   sectionTitle_right: combineStyles(sectionTitle, "border-[#011962] text-[#011962]"),
-};
-
-// Spacing styles
-export const SPACING = {
-  section: "my-2",
-  item: "my-2",
 };
 
 // Common UI elements used across components
@@ -108,7 +102,6 @@ export const SectionTitle = ({ children, position = "left" }) => (
 export default {
   LAYOUT,
   TEXT,
-  SPACING,
   ICONS,
   Icon,
   combineStyles, // Add the combineStyles function to the default export

@@ -1,10 +1,9 @@
 import React from 'react';
-import { SectionTitle, Icon } from '../styles/globalStyles.jsx';
-import { REFERENCES } from '../styles/componentStyles.jsx';
+import { SectionTitle, REFERENCES, Icon } from '../styles/Styling.jsx';
 
 // Individual reference item component
 const ReferenceItem = ({ name, title, position, institution, location, phone, email }) => (
-  <div>
+  <div className={REFERENCES.referenceItem}>
     <p className={REFERENCES.referenceName}>{name}</p>
     {position && <p className={REFERENCES.referencePosition}>{position}</p>}
     <p className={REFERENCES.referenceInstitution}>{institution}</p>

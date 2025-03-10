@@ -1,6 +1,5 @@
 import React from 'react';
-import { SectionTitle, Icon } from '../styles/globalStyles.jsx';
-import { PUBLICATIONS } from '../styles/componentStyles.jsx';
+import { SectionTitle, PUBLICATIONS, Icon } from '../styles/Styling.jsx';
 
 // Individual publication item component
 const PublicationItem = ({ title, journal, authors, year, link }) => (
@@ -26,7 +25,7 @@ const Publications = ({ publications }) => {
   
   return (
     <div className={PUBLICATIONS.publicationContainer}>
-      <SectionTitle position="right">Publications</SectionTitle>
+      <SectionTitle position="left">Publications</SectionTitle>
       <div className={PUBLICATIONS.publicationGrid}>
         {publications.map((item, index) => (
           <PublicationItem 

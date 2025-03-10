@@ -1,6 +1,5 @@
 import React from 'react';
-import { SectionTitle, Icon } from '../styles/globalStyles.jsx';
-import { CONTACT } from '../styles/componentStyles.jsx';
+import { SectionTitle, CONTACT, Icon } from '../styles/Styling.jsx';
 
 // Reusable contact item component with icon and content
 const ContactItem = ({ iconType, description }) => (

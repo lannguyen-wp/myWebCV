@@ -1,6 +1,5 @@
 import React from 'react';
-import { SectionTitle, Icon } from '../styles/globalStyles.jsx';
-import { ACHIEVEMENTS } from '../styles/componentStyles.jsx';
+import { SectionTitle, ACHIEVEMENTS, Icon } from '../styles/Styling.jsx';
 
 // Individual achievement item with icon
 const AchievementItem = ({ iconType, description }) => (

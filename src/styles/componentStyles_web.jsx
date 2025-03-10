@@ -1,4 +1,4 @@
-import { baseLAYOUT, baseTEXT, combineStyles, LAYOUT, TEXT } from "./globalStyles";
+import { baseLAYOUT, baseTEXT, combineStyles, LAYOUT, TEXT } from "./globalStyles_web";
 
 const hyperlink = combineStyles(baseTEXT.textURL, "");
 
@@ -50,7 +50,7 @@ export const REFERENCES = {
   referenceTitle: "italic",
   referenceInstitution: "",
   referenceLocation: "",
-  referenceContact: "mt-0",
+  referenceContact: "",
   referencePhone: baseLAYOUT.align_fc,
   referenceEmail: baseLAYOUT.align_fc,
   referenceIcon: LAYOUT.iconStyle,
