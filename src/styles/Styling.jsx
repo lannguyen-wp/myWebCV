@@ -65,19 +65,23 @@ export const baseStyles = {
 // Layout styles
 export const LAYOUT = {
   // Main container styles
-  pageContainer: "flex justify-center bg-gray-200 py-4",
-  container: "w-[210mm] bg-white overflow-hidden",
+  container: "flex flex-col items-center py-4", // Container for all pages
+  pageContainer: "flex flex-col items-center justify-center bg-gray-200 p-4",
+  
+  
+  // A4 page style with adjusted dimensions to prevent print overflow
+  page: "w-[210mm] h-[297mm] bg-white shadow-lg border border-red-500", // Slightly reduced from A4 dimensions
+  
   // Grid layout styles for consistent column widths
-  gridContainer: "grid grid-cols-3",
-  gridItem: "grid grid-col gap-0",
+  gridContainer: "grid grid-cols-3 h-full py-8 px-4", // Added row template
   // Full width header row
-  headerRow: "col-span-3 flex flex-col bg-[#F3F4F6] pl-4",
+  headerRow: "col-span-3 flex flex-col bg-[#F3F4F6] pl-4 justify-center",
   // Renamed to match actual positions - Right column is dark colored
   gridColRight: combineStyles(baseStyles.layout.gridColRight, "bg-[#61584F] items-center"),
   gridColLeft: combineStyles(baseStyles.layout.gridColLeft, "bg-white items-start"),
   // Section styles
-  sectionContainer_right: combineStyles(baseStyles.text.textBase, "text-white w-full mt-2"),
-  sectionContainer_left: combineStyles(baseStyles.text.textBase, "text-[#011962] w-full mt-2"),
+  sectionContainer_right: combineStyles(baseStyles.text.textBase, "text-white w-full mt-0"),
+  sectionContainer_left: combineStyles(baseStyles.text.textBase, "text-[#011962] w-full mt-0"),
   // Item styles
   iconStyle: "w-4 h-4 mr-1 flex-shrink-0",
   listStyle: "list-disc pl-5 mt-1",
@@ -110,7 +114,7 @@ export const COMPONENT_STYLES = {
 
   // Contact_oneLine component styles
   CONTACT_ONELINE: {
-    contactContainer: combineStyles("mt-0 mb-2 text-[#011962]"),
+    contactContainer: combineStyles("mt-0 mb-2 text-[#011962] text-sm"),
     contactGrid: combineStyles("flex flex-wrap items-center"),
     contactItem: combineStyles("inline-flex items-center mr-4"),
     websiteItem: combineStyles("inline-flex items-center mr-4"),
