@@ -1,26 +1,27 @@
 import React from 'react';
-import { SectionTitle, WORK_EXPERIENCE, Icon } from '../styles/Styling.jsx';
+import { Icon } from '../styles/Styling_Global.jsx';
+import { useStyle } from '../styles/Styling_Context';
 
 // Individual work item component
-const WorkItem = ({ title, company, location, years, responsibilities }) => (
-  <div className={WORK_EXPERIENCE.workItem}>
+const WorkItem = ({ title, company, location, years, responsibilities, styles }) => (
+  <div className={styles.workItem}>
     <div className="flex justify-between items-baseline">
-      <h3 className={WORK_EXPERIENCE.workTitle}>{title}</h3>
+      <h3 className={styles.workTitle}>{title}</h3>
       <div className="flex items-center">
-        <Icon type="calendar" className={WORK_EXPERIENCE.workIcon} />
+        <Icon type="calendar" className={styles.workIcon} />
         <span>{years}</span>
       </div>
     </div>
     <div className="flex justify-between items-baseline">
-      <p className={WORK_EXPERIENCE.workCompany}>{company}</p>
+      <p className={styles.workCompany}>{company}</p>
       <div className="flex items-center">
-        <Icon type="location" className={WORK_EXPERIENCE.workIcon} />
+        <Icon type="location" className={styles.workIcon} />
         <span>{location}</span>
       </div>
     </div>
-    <ul className={WORK_EXPERIENCE.workList}>
+    <ul className={styles.workList}>
       {responsibilities.map((responsibility, index) => (
-        <li key={index} className={WORK_EXPERIENCE.workDescription}>
+        <li key={index} className={styles.workDescription}>
           {responsibility}
         </li>
       ))}
@@ -28,12 +29,13 @@ const WorkItem = ({ title, company, location, years, responsibilities }) => (
   </div>
 );
 
-const WorkExperience = ({ workExperience }) => {
+const WorkExperience = ({ workExperience, position }) => {
   if (!workExperience || workExperience.length === 0) return null;
-  
+  const styles = useStyle();
+  const { SectionTitle, WORK_EXPERIENCE } = styles;
   return (
     <div className={WORK_EXPERIENCE.workContainer}>
-      <SectionTitle position="left">Work Experience</SectionTitle>
+      <SectionTitle position={position}>Work Experience</SectionTitle>
       <div className={WORK_EXPERIENCE.workGrid}>
         {workExperience.map((item, index) => (
           <WorkItem 
@@ -43,6 +45,7 @@ const WorkExperience = ({ workExperience }) => {
             location={item.location}
             years={item.years}
             responsibilities={item.responsibilities}
+            styles={WORK_EXPERIENCE}
           />
         ))}
       </div>

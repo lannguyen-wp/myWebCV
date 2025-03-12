@@ -1,12 +1,13 @@
 import React from 'react';
-import { SectionTitle, PROFILE } from '../styles/Styling.jsx';
+import { useStyle } from '../styles/Styling_Context';
 
-const Profile = ({ profile }) => {
+const Profile = ({ profile, position }) => {
   if (!profile) return null;
-  
+    const styles = useStyle();
+    const { SectionTitle, PROFILE } = styles;
   return (
     <div className={PROFILE.profileContainer}>
-      <SectionTitle position="left">Profile</SectionTitle>
+      <SectionTitle position={position}>Profile</SectionTitle>
       <p className={PROFILE.profileText}>
         {profile.description}
       </p>

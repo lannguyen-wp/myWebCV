@@ -1,12 +1,14 @@
 {
-  "personalInfo": {
+  "personalInfo": [
+    {
     "name": "Lan Nguyen",
     "title": "Geospatial Analyst | Workflow Automation | Data Visualization"
-  },
+    }
+  ],
   "contact": [
     {
       "iconType": "phone",
-      "description": "(825)-365-5191"
+      "description": "+1-(825)-365-5191"
     },
     {
       "iconType": "email",
@@ -14,7 +16,7 @@
     },
     {
       "iconType": "location",
-      "description": "Calgary, Alberta, Canada"
+      "description": "Calgary, AB, Canada"
     },
     {
       "iconType": "link",

@@ -1,11 +1,16 @@
 import React from 'react';
-import { CONTACT_ONELINE, Icon } from '../styles/Styling.jsx';
+import { Icon } from '../styles/Styling_Global.jsx';
+import { useStyle } from '../styles/Styling_Context';
 
-// Reusable contact item component with icon and content for inline display
-const ContactItem = ({ iconType, description }) => (
-  <div className={CONTACT_ONELINE.contactItem}>
-    <Icon type={iconType} className={CONTACT_ONELINE.contactIcon} />
-    <span className={CONTACT_ONELINE.contactDescription}>{description}</span>
+// Reusable contact item component with icon and content
+const ContactItem = ({ iconType, description, styles }) => (
+  <div className={styles.contactItem}>
+    <Icon type={iconType} className={styles.contactIcon} />
+    {iconType === 'email' ? (
+      <a href={`mailto:${description}`} className={styles.contactLink}>{description}</a>
+    ) : (
+      <span className={styles.contactDescription}>{description}</span>
+    )}
   </div>
 );
 
@@ -14,28 +19,29 @@ const Contact_oneLine = ({ contact }) => {
   // Group website links together
   const websites = contact.filter(item => item.iconType === "link");
   const otherContacts = contact.filter(item => item.iconType !== "link");
-  
+  const styles = useStyle();
+  const { CONTACT } = styles;
   return (
-    <div className={CONTACT_ONELINE.contactContainer}>
-      <div className={CONTACT_ONELINE.contactGrid}>
+    <div className={CONTACT.contactContainer}>
+      <div className={CONTACT.contactGrid}>
         {/* Display regular contact items */}
         {otherContacts.map((item, index) => (
           <ContactItem 
             key={index}
             iconType={item.iconType}
-            description={item.description}
+            description={item.description} // Handle both url and description
+            styles={CONTACT}
           />
         ))}
-        
         {/* Display website links if any */}
         {websites.length > 0 && (
-          <div className={CONTACT_ONELINE.websiteItem}>
-            <Icon type="link" className={CONTACT_ONELINE.contactIcon} />
-            <div className={CONTACT_ONELINE.websitesContainer}>
+          <div className={CONTACT.websiteItem}>
+            <Icon type="link" className={styles.contactIcon} />
+            <div className={CONTACT.websitesContainer}>
               {websites.map((site, index) => (
                 <React.Fragment key={index}>
-                  <a href={site.url} className={CONTACT_ONELINE.contactLink}>{site.label}</a>
-                  {index < websites.length - 1 && <span className={CONTACT_ONELINE.contactLinkSeparator}></span>}
+                  <a href={site.url} className={CONTACT.contactLink}>{site.label}</a>
+                  {index < websites.length - 1 && <span className={CONTACT.contactLinkSeparator}></span>}
                 </React.Fragment>
               ))}
             </div>

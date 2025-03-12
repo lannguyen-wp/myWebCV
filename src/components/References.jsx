@@ -1,37 +1,38 @@
 import React from 'react';
-import { SectionTitle, REFERENCES, Icon } from '../styles/Styling.jsx';
+import { Icon } from '../styles/Styling_Global.jsx';
+import { useStyle } from '../styles/Styling_Context';
 
 // Individual reference item component
-const ReferenceItem = ({ name, title, position, institution, location, phone, email }) => (
-  <div className={REFERENCES.referenceItem}>
-    <p className={REFERENCES.referenceName}>{name}</p>
-    {position && <p className={REFERENCES.referencePosition}>{position}</p>}
-    <p className={REFERENCES.referenceInstitution}>{institution}</p>
-    {location && <p className={REFERENCES.referenceLocation}>{location}</p>}
-    
-    <div className={REFERENCES.referenceContact}>
+const ReferenceItem = ({ name, position, institution, location, phone, email, styles }) => (
+  <div className={styles.referenceItem}>
+    <p className={styles.referenceName}>{name}</p>
+    {position && <p className={styles.referencePosition}>{position}</p>}
+    <p className={styles.referenceInstitution}>{institution}</p>
+    {location && <p className={styles.referenceLocation}>{location}</p>}
+    <div className={styles.referenceContact}>
       {phone && (
-        <div className={REFERENCES.referencePhone}>
-          <Icon type="phone" className={REFERENCES.referenceIcon} />
+        <div className={styles.referencePhone}>
+          <Icon type="phone" className={styles.referenceIcon} />
           <span>{phone}</span>
         </div>
       )}
       {email && (
-        <div className={REFERENCES.referenceEmail}>
-          <Icon type="email" className={REFERENCES.referenceIcon} />
-          <a href={`mailto:${email}`} className={REFERENCES.referenceLink}>{email}</a>
+        <div className={styles.referenceEmail}>
+          <Icon type="email" className={styles.referenceIcon} />
+          <a href={`mailto:${email}`} className={styles.referenceLink}>{email}</a>
         </div>
       )}
     </div>
   </div>
 );
 
-const References = ({ references }) => {
+const References = ({ references, position }) => {
   if (!references || references.length === 0) return null;
-  
+  const styles = useStyle();
+  const { SectionTitle, REFERENCES } = styles;
   return (
     <div className={REFERENCES.referenceContainer}>
-      <SectionTitle>References</SectionTitle>
+      <SectionTitle position={position}>References</SectionTitle>
       <div className={REFERENCES.referenceGrid}>
         {references.map((item, index) => (
           <ReferenceItem 
@@ -42,6 +43,7 @@ const References = ({ references }) => {
             location={item.location}
             phone={item.phone}
             email={item.email}
+            styles={REFERENCES}
           />
         ))}
       </div>

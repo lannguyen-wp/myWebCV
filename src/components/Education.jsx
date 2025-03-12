@@ -1,33 +1,35 @@
 import React from 'react';
-import { SectionTitle, EDUCATION, Icon } from '../styles/Styling.jsx';
+import { Icon } from '../styles/Styling_Global.jsx';
+import { useStyle } from '../styles/Styling_Context';
 
 // Individual education item component
-const EducationItem = ({ degree, period, institution, location, years }) => (
-  <div className={EDUCATION.educationItem}>
+const EducationItem = ({ degree, period, institution, location, years, styles }) => (
+  <div className={styles.educationItem}>
     {/* Handle both string and array degrees */}
     {Array.isArray(degree) ? (
-      <div className={EDUCATION.educationDegreeContainer}>
+      <div className={styles.educationDegreeContainer}>
         {degree.map((degreeItem, index) => (
-          <h3 key={index} className={EDUCATION.educationDegree}>{degreeItem}</h3>
+          <h3 key={index} className={styles.educationDegree}>{degreeItem}</h3>
         ))}
       </div>
     ) : (
-      <h3 className={EDUCATION.educationDegree}>{degree}</h3>
+      <h3 className={styles.educationDegree}>{degree}</h3>
     )}
-    <div className={EDUCATION.educationPeriod}>
-      <Icon type="calendar" className={EDUCATION.educationIcon} />
+    <div className={styles.educationPeriod}>
+      <Icon type="calendar" className={styles.educationIcon} />
       <span>{years || period}</span>
     </div>
     <p>{institution} {location ? `, ${location}` : ''}</p>
   </div>
 );
 
-const Education = ({ education }) => {
+const Education = ({ education, position }) => {
   if (!education || education.length === 0) return null;
-  
+  const styles = useStyle();
+  const { SectionTitle, EDUCATION } = styles;
   return (
     <div className={EDUCATION.educationContainer}>
-      <SectionTitle>Education</SectionTitle>
+      <SectionTitle position={position}>Education</SectionTitle>
       <div className={EDUCATION.educationGrid}>
         {education.map((item, index) => (
           <EducationItem 
@@ -37,6 +39,7 @@ const Education = ({ education }) => {
             years={item.years}
             institution={item.institution}
             location={item.location}
+            styles={EDUCATION}
           />
         ))}
       </div>

@@ -1,31 +1,33 @@
 import React from 'react';
-import { SectionTitle, PUBLICATIONS, Icon } from '../styles/Styling.jsx';
+import { Icon } from '../styles/Styling_Global.jsx';  // Change to named import
+import { useStyle } from '../styles/Styling_Context';
 
 // Individual publication item component
-const PublicationItem = ({ title, journal, authors, year, link }) => (
-  <div className={PUBLICATIONS.publicationItem}>
-    <p className={PUBLICATIONS.publicationTitle}>{title}</p>
-    <p className={PUBLICATIONS.publicationJournal}>{journal}</p>
-    <p className={PUBLICATIONS.publicationAuthors}>{authors}</p>
-    <div className={PUBLICATIONS.publicationFooter}>
-      <div className={PUBLICATIONS.publicationLink}>
-        <Icon type="link" className={PUBLICATIONS.publicationIcon} />
-        <a href={link} className={PUBLICATIONS.publicationLinkText}>{link}</a>
+const PublicationItem = ({ title, journal, authors, year, link, styles }) => (
+  <div className={styles.publicationItem}>
+    <p className={styles.publicationTitle}>{title}</p>
+    <p className={styles.publicationJournal}>{journal}</p>
+    <p className={styles.publicationAuthors}>{authors}</p>
+    <div className={styles.publicationFooter}>
+      <div className={styles.publicationLink}>
+        <Icon type="link" className={styles.publicationIcon} />
+        <a href={link} className={styles.publicationLinkText}>{link}</a>
       </div>
-      <div className={PUBLICATIONS.publicationYear}>
-        <Icon type="calendar" className={PUBLICATIONS.publicationIcon} />
+      <div className={styles.publicationYear}>
+        <Icon type="calendar" className={styles.publicationIcon} />
         <span>{year}</span>
       </div>
     </div>
   </div>
 );
 
-const Publications = ({ publications }) => {
+const Publications = ({ publications, position }) => {
   if (!publications || publications.length === 0) return null;
-  
+  const styles = useStyle();
+  const { SectionTitle, PUBLICATIONS } = styles;
   return (
     <div className={PUBLICATIONS.publicationContainer}>
-      <SectionTitle position="left">Publications</SectionTitle>
+      <SectionTitle position={position}>Publications</SectionTitle>
       <div className={PUBLICATIONS.publicationGrid}>
         {publications.map((item, index) => (
           <PublicationItem 
@@ -35,6 +37,7 @@ const Publications = ({ publications }) => {
             authors={item.authors}
             year={item.year}
             link={item.link}
+            styles={PUBLICATIONS}
           />
         ))}
       </div>

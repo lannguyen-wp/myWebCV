@@ -5,7 +5,17 @@ export default {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+    },
   },
   plugins: [],
+  safelist: [
+    'text-[#FFFFFF]',
+    'text-[#011962]', 
+    'border-[#FFFFFF]',
+    'border-[#011962]',
+    'bg-[#FFFFFF]',
+    'bg-[#61584F]',
+    'bg-[#F3F4F6]'
+  ],
 }
