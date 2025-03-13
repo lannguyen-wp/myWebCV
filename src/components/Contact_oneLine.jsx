@@ -36,7 +36,7 @@ const Contact_oneLine = ({ contact }) => {
         {/* Display website links if any */}
         {websites.length > 0 && (
           <div className={CONTACT.websiteItem}>
-            <Icon type="link" className={styles.contactIcon} />
+            <Icon type="website" className={CONTACT.contactIcon} />
             <div className={CONTACT.websitesContainer}>
               {websites.map((site, index) => (
                 <React.Fragment key={index}>

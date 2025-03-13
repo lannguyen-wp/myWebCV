@@ -1,0 +1,22 @@
+{
+  "education": [
+    {
+      "degree": ["Ph.D. in Geospatial Science & Engineering"],
+      "institution": "South Dakota State University",
+      "location": "Brookings, SD, USA",
+      "years": "2015 - 2019"
+    },
+    {
+      "degree": ["M.S. in Environmental Science", "M.S. in Physical & Applied Science"],
+      "institution": "Marshall University",
+      "location": "Huntington, WV, USA",
+      "years": "2009 - 2012"
+    },
+    {
+      "degree": ["B.S. in Hydrology & Environment"],
+      "institution": "Thuyloi University",
+      "location": "Hanoi, Vietnam",
+      "years": "2003 - 2008"
+    }
+  ]
+}

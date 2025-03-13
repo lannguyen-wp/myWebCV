@@ -93,8 +93,11 @@ export const EDUCATION = {
   educationContainer: `${LAYOUT.sectionContainer_lt}`,
   educationGrid: `${LAYOUT.gridItem}`,
   educationItem: ``,
-  educationDegree: `${heading_subsection}`,
+  educationDegree: `${heading_subsection} text-orange-300`,
+  educationInstitution: ``,
+  educationMetaRow: `${baseLayout.align_fc} justify-between`,
   educationPeriod: `${baseLayout.align_fc}`,
+  educationLocation: `${baseLayout.align_fc}`,
   educationIcon: `${LAYOUT.iconStyle}`,
 };
 
@@ -112,11 +115,22 @@ export const SKILLS = {
   skillDescription: ``,
 };
 
+export const PROJECTHIGHLIGHTS = {
+  projecthighlightContainer: `${LAYOUT.sectionContainer_lt}`,
+  projecthighlightGrid: `${LAYOUT.gridItem}`,
+  projecthighlightItem: ``,
+  projecthighlightTitle: `${heading_subsection} text-orange-300`,
+  projecthighlightObjective:``,
+  projecthighlightResponsibility: ``,
+  projecthighlightTools: ``,
+  projecthighlightImpact: ``,
+};
+
 export const REFERENCES = {
   referenceContainer: `${LAYOUT.sectionContainer_lt}`,
   referenceGrid: `${LAYOUT.gridItem}`,
   referenceItem: ``,
-  referenceName: `${heading_subsection}`,
+  referenceName: `${heading_subsection} text-orange-300`,
   referencePosition: `italic`,
   referenceInstitution: ``,
   referenceLocation: ``,
@@ -136,7 +150,7 @@ export const WORK_EXPERIENCE = {
   workContainer: `${LAYOUT.sectionContainer_rt}`,
   workGrid: `${LAYOUT.gridItem}`,
   workItem: ``,
-  workTitle: `${heading_subsection}`,
+  workTitle: `${heading_subsection} text-blue-500`,
   workIcon: `${LAYOUT.iconStyle}`,
   workCompany: `italic`,
   workList: `${LAYOUT.listStyle}`,
@@ -147,8 +161,8 @@ export const PUBLICATIONS = {
   publicationContainer: `${LAYOUT.sectionContainer_rt}`,
   publicationGrid: `${LAYOUT.gridItem}`,
   publicationItem: `mb-0 pb-2 border-b border-dashed border-gray-300 w-full`,
-  publicationTitle: `${heading_subsection}`,
-  publicationJournal: `text-orange-500 font-bold`,
+  publicationTitle: `${heading_subsection} text-blue-500`,
+  publicationJournal: `font-bold`,
   publicationAuthors: `italic`,
   publicationFooter: `${baseLayout.align_fc} justify-between`,
   publicationLink: `${baseLayout.align_fc}`,
@@ -166,6 +180,7 @@ const Styling = {
   EDUCATION,
   ACHIEVEMENTS,
   SKILLS,
+  PROJECTHIGHLIGHTS,
   REFERENCES,
   PROFILE,
   WORK_EXPERIENCE,

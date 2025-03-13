@@ -1,0 +1,36 @@
+{
+  "references": [
+    {
+      "name": "Dr. Geoffrey Henebry",
+      "position": "Professor - Dissertation Advisor",
+      "institution": "Michigan State University",
+      "location": "East Lansing, Michigan, USA",
+      "phone": "+1-(517)-355-3899",
+      "email": "henebryg@msu.edu"
+    },
+    {
+      "name": "Dr. Paul Galpern",
+      "position": "Associate Professor - Postdoctoral Advisor",
+      "institution": "University of Calgary",
+      "location": "Calgary, Alberta, CA",
+      "phone": "+1-(403)-220-7436",
+      "email": "paul.galpern@ucalgary.ca"
+    },
+    {
+      "name": "Dr. Samuel Robinson",
+      "position": "Research Scientist",
+      "institution": "Ducks Unlimited Canada",
+      "location": "Stonewall, Manitoba, CA",
+      "phone": "+1-(604)-314-1832",
+      "email": "s_robinson@ducks.ca"
+    },
+    {
+      "name": "Ms. Luanne Richardson",
+      "position": "Project Manager / Owner",
+      "institution": "Caslys Consulting Ltd.",
+      "location": "Saanichton, British Columbia, CA",
+      "phone": "+1-(250)-652-9268",
+      "email": "lrichardson@caslys.ca"
+    }
+  ]
+}

@@ -6,9 +6,9 @@
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-quill": "^2.0.0",
     "react-router-dom": "^7.3.0",
-    "react-to-print": "^2.14.13",
-    "styled-components": "^6.1.15"
+    "react-to-print": "^2.14.13"
   },
   "scripts": {
     "dev": "vite",

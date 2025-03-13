@@ -1,0 +1,25 @@
+{
+  "skills": [
+    "Geospatial Data Analysis",
+    "Database and ETL Workflow",
+    "GIS & RS Software: ArcGIS, QGIS, ENVI...",
+    "Big Data and Google Earth Engine",
+    "Python / Arcade / R / JavaScript",
+    "Interactive Data Visualization",
+    "Spatial Statistics",
+    "Machine Learning / Deep Learning",
+    "Innovative Thinking",
+    "Leadership and Mentorship",
+    "Curriculum Design"
+  ],
+  "skills_gis": [
+    "Geospatial Data Analysis",
+    "Database and ETL Workflow",
+    "GIS & RS Software: ArcGIS, QGIS, ENVI...",
+    "GeoAI & Big Data",
+    "Programming: Python, Arcade, R",
+    "Interactive Data Visualization",
+    "Innovative Thinking",
+    "Project Management & Leadership"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "projects": [
+    {
+      "title": "Harvest Change Detection",
+      "objective": "Develop a remote sensing solution to detect monthly cut blocks across BC.",
+      "responsibilities": "Designed and implemented a multi-temporal change detection workflow, and coordinated internal and external teams for QA/QC to ensure detection accuracy.",
+      "tools": "Google Earth Engine and Python scripts.",
+      "impact": "Produced monthly cut block maps from 2020 to 2023, enabling province-wide forest management and informed decision-making." 
+    },
+    {
+      "title": "Impact of Marginal Habitats on Canola Yield",
+      "objective": "Assess the influence of marginal habitats on canola yield.",
+      "responsibilities": "Designed and implemented machine learning and statistical models to map precise canola yields; evaluated habitat impacts on productivity.",
+      "tools": "R / Python scripts, ArcGIS Pro.",
+      "impact": "Optimized field design and supported conservation of natural land cover in Alberta." 
+    },
+    {
+      "title": "Cropland Expansion Analysis",
+      "objective": "Evaluate cropland expansion in South Dakota from 2008 to 2018.",
+      "responsibilities": "Developed and applied time series-based methods to map multi-year land cover and detect long-term crop change from Landsat / Sentinel imagery.",
+      "tools": "R / Python scripts.",
+      "impact": "Provided critical insights to support sustainable land management practices." 
+    },
+    {
+      "title": "Seismic Lines Assessment",
+      "objective": "Evaluate vegetation recovery along seismic lines in BC.",
+      "responsibilities": "Designed and implemented segmentation and clustering process to identify groups of seismic lines with similar recovery status for further manual investigation.",
+      "tools": "Python scripts, ArcGIS Pro.",
+      "impact": "Significantly minimized manual inspection efforts while maintaining high assessment accuracy."
+    }
+  ]
+}

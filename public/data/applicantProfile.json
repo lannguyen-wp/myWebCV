@@ -1,0 +1,33 @@
+{
+  "personalInfo": {
+    "name": "Lan Nguyen",
+    "title": "Geospatial Analyst | Workflow Automation | Data Management"
+  },
+  "contact": [
+    {
+      "iconType": "phone",
+      "description": "+1-(825)-365-5191"
+    },
+    {
+      "iconType": "email",
+      "description": "hoanglan.nguyen@ucalgary.ca"
+    },
+    {
+      "iconType": "location",
+      "description": "Calgary, AB, Canada"
+    },
+    {
+      "iconType": "link",
+      "label": "Linkedin",
+      "url": "https://www.linkedin.com/in/lannguyen-wp/"
+    },
+    {
+      "iconType": "link",
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/citations?user=gK8v6KAAAAAJ&hl=en"
+    }
+  ],
+  "profile": {
+    "description": "Experienced Geospatial Analyst with 10+ years of experience in GIS & RS, and geospatial data analytics across research and private sectors. Proven expertise in designing innovative solutions, and delivering actionable insights. Proficient in industry-standard tools like ESRI Suite, QGIS, GEE, Python, R. Recognized for impactful publications and a patented innovation, with a proven ability to lead teams and translate technical expertise into actionable, data-driven solutions."
+  }
+}

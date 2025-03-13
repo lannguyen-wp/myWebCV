@@ -5,7 +5,7 @@ import { useStyle } from '../styles/Styling_Context';
 // Individual education item component
 const EducationItem = ({ degree, period, institution, location, years, styles }) => (
   <div className={styles.educationItem}>
-    {/* Handle both string and array degrees */}
+    {/* 1. Degree - keep as is */}
     {Array.isArray(degree) ? (
       <div className={styles.educationDegreeContainer}>
         {degree.map((degreeItem, index) => (
@@ -15,11 +15,23 @@ const EducationItem = ({ degree, period, institution, location, years, styles })
     ) : (
       <h3 className={styles.educationDegree}>{degree}</h3>
     )}
-    <div className={styles.educationPeriod}>
-      <Icon type="calendar" className={styles.educationIcon} />
-      <span>{years || period}</span>
+    {/* 2. Institution on its own line */}
+    <p className={styles.educationInstitution}>{institution}</p>
+    {/* 3. Time and Location on same line with icons */}
+    <div className={styles.educationMetaRow}>
+      {/* Time with icon */}
+      <div className={styles.educationPeriod}>
+        <Icon type="calendar" className={styles.educationIcon} />
+        <span>{years || period}</span>
+      </div>
+      {/* Location with icon */}
+      {location && (
+        <div className={styles.educationLocation}>
+          <Icon type="location" className={styles.educationIcon} />
+          <span>{location}</span>
+        </div>
+      )}
     </div>
-    <p>{institution} {location ? `, ${location}` : ''}</p>
   </div>
 );
 

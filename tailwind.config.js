@@ -16,6 +16,8 @@ export default {
     'border-[#011962]',
     'bg-[#FFFFFF]',
     'bg-[#61584F]',
-    'bg-[#F3F4F6]'
+    'bg-[#F3F4F6]',
+    'bg-[#E1E1E1]',
+    'bg-[#F5F5F5]'
   ],
 }
