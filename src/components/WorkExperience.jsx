@@ -35,7 +35,7 @@ const WorkExperience = ({ workExperience, position }) => {
   const { SectionTitle, WORK_EXPERIENCE } = styles;
   return (
     <div className={WORK_EXPERIENCE.workContainer}>
-      <SectionTitle position={position}>Work Experience</SectionTitle>
+      <SectionTitle position={position}>Professional Experience</SectionTitle>
       <div className={WORK_EXPERIENCE.workGrid}>
         {workExperience.map((item, index) => (
           <WorkItem 

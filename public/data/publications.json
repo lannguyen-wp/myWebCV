@@ -1,80 +1,80 @@
 {
   "publications": [
     {
-      "title": "Satellite prediction of coastal hypoxia in the northern Gulf of Mexico",
-      "journal": "Remote Sensing of Environment",
-      "authors": "Li, Y., Robinson, S. V., Nguyen, L. H., & Liu, J.",
-      "year": "2023",
-      "link": "https://doi.org/10.1016/j.rse.2022.113346"
-    },
-    {
       "title": "Tillage Identification and Verification Tool Using Satellite Time Series Imagery",
       "journal": "Canadian Patent Database",
       "authors": "Nguyen, L.",
-      "year": "2022",
+      "year": "08/2023",
       "link": "https://brevets-patents.ic.gc.ca/opic-cipo/cpd/eng/patent/3190948/summary.html"
     },
     {
-      "title": "Effects of landscape complexity on crop productivity: An assessment from space",
-      "journal": "Agriculture, Ecosystems & Environment",
-      "authors": "Nguyen, L. H., Robinson, S. V., & Galpern, P",
-      "year": "2022",
-      "link": "https://doi.org/10.1016/j.agee.2021.107849"
+      "title": "Satellite prediction of coastal hypoxia in the northern Gulf of Mexico",
+      "journal": "Remote Sensing of Environment",
+      "authors": "Li, Y., Robinson, S. V., Nguyen, L. H., & Liu, J.",
+      "year": "11/2022",
+      "link": "https://doi.org/10.1016/j.rse.2022.113346"
     },
     {
       "title": "Livin'on the edge: Precision yield data shows evidence of ecosystem services from field boundaries.",
       "journal": "Agriculture, Ecosystems & Environment",
       "authors": "Robinson, S., Nguyen, L.H., & Galpern, P.",
-      "year": "2022",
+      "year": "03/2022",
       "link": "https://doi.org/10.1016/j.agee.2022.107956"
+    },
+    {
+      "title": "Effects of landscape complexity on crop productivity: An assessment from space",
+      "journal": "Agriculture, Ecosystems & Environment",
+      "authors": "Nguyen, L. H., Robinson, S. V., & Galpern, P",
+      "year": "01/2022",
+      "link": "https://doi.org/10.1016/j.agee.2021.107849"
     },
     {
       "title": "Medium-resolution multispectral satellite imagery in precision agriculture: mapping precision canola (Brassica napus L.) yield using Sentinel-2 time series",
       "journal": "Precision Agriculture",
       "authors": "Nguyen, L. H., Robinson, S., & Galpern, P.",
-      "year": "2022",
+      "year": "01/2022",
       "link": "https://doi.org/10.1007/s11119-022-09874-7"
     },
     {
       "title": "Land surface phenology in the highland pastures of montane Central Asia: Interactions with snow cover seasonality and terrain characteristics.",
       "journal": "Remote Sensing of Environment",
       "authors": "Tomaszewska, M.A., Nguyen, L.H., & Henebry, G.M.",
-      "year": "2020",
+      "year": "01/2020",
       "link": "https://doi.org/10.1016/j.rse.2020.111675"
     },
     {
       "title": "Characterizing land use/land cover using multi-sensor time series from the perspective of land surface phenology",
       "journal": "Remote Sensing",
       "authors": "Nguyen, L. H., & Henebry, G. M.",
-      "year": "2019",
+      "year": "07/2019",
       "link": "https://doi.org/10.3390/rs11141677"
     },
     {
       "title": "Improved Change Detection with Trajectory-Based Approach: Application to Quantify Cropland Expansion in South Dakota",
       "journal": "Land",
       "authors": "Nguyen, L.H., Joshi, D.R., & Henebry, G.M.",
-      "year": "2019",
+      "year": "04/2019",
       "link": "https://doi.org/10.3390/land8040057"
     },
     {
       "title": "Characterizing land cover/land use from multiple years of Landsat and MODIS time series: a novel approach using land surface phenology modeling and random forest classifiers.",
       "journal": "Remote Sensing of Environment",
       "authors": "Nguyen, L.H., Joshi, D.R., Clay, D.E., & Henebry, G.M.",
-      "year": "2019",
+      "year": "12/2018",
       "link": "https://doi.org/10.1016/j.rse.2018.12.016"
     },
     {
       "title": "Expansion of major urban areas in the US Great Plains from 2000 to 2009 using satellite scatterometer data",
       "journal": "Remote Sensing of Environment",
       "authors": "Nguyen, L.H., Nghiem, S.V., & Henebry, G. M.",
-      "year": "2018",
+      "year": "11/2017",
       "link": "http://doi.org/10.1016/j.rse.2017.10.004"
     },
     {
       "title": "Urban heat islands as viewed by microwave radiometers and thermal time indices.",
       "journal": "Remote Sensing",
       "authors": "Nguyen, L.H., & Henebry, G.M.",
-      "year": "2016",
+      "year": "10/2016",
       "link": "http://doi.org/10.3390/rs8100831"
     }
   ]

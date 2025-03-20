@@ -32,6 +32,34 @@ export const ICONS = {
   ),
   bullet: (
     <span className="mr-2">•</span>
+  ),
+  // New trophy icon
+  trophy: (
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3v2m-6-2v2m-6-2v2M7 7l1-2M9 3h6l2 2h4a1 1 0 011 1v3a1 1 0 01-1 1h-1M9 3l-1 2H4a1 1 0 00-1 1v3a1 1 0 001 1h1"></path>
+  ),
+  // New medal icon
+  medal: (
+    <>
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15a3 3 0 100-6 3 3 0 000 6z"></path>
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19.5 12c0-4.136-3.364-7.5-7.5-7.5S4.5 7.864 4.5 12s3.364 7.5 7.5 7.5 7.5-3.364 7.5-7.5z"></path>
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.5 4.5L9 7M14.5 4.5L15 7"></path>
+    </>
+  ),
+  // LinkedIn icon
+  linkedin: (
+    <>
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" />
+      <rect strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" x="2" y="9" width="4" height="12" />
+      <circle strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" cx="4" cy="4" r="2" />
+    </>
+  ),
+  // Google Scholar icon 
+  scholar: (
+    <>
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+    </>
   )
 };
 

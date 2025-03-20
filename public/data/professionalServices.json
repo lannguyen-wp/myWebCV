@@ -1,0 +1,14 @@
+{
+    "services": [
+        {
+            "peer_reviewer": {
+                "title": "Peer Reviewer",
+                "description": "Regular reviewer for leading journals in remote sensing, including those in ScienceDirect, Taylor & Francis, and MDPI. Recognized as an outstanding reviewer by Remote Sensing of Environment."
+            },
+            "mentoring": {
+                "title": "Mentoring",
+                "description": "Carl Dizon, undergraduate 2020 summer project, Department of Biological Science, University of Calgary."
+            }
+        }
+    ]
+}

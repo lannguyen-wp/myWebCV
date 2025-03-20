@@ -1,12 +1,13 @@
 {
   "personalInfo": {
     "name": "Lan Nguyen",
-    "title": "Geospatial Analyst | Workflow Automation | Data Management"
+    "title": "Geospatial Analyst | Workflow Automation | Data Management",
+    "title_academic": "Geospatial Data Analytics | GeoAI | Timeseries Analysis"
   },
   "contact": [
     {
       "iconType": "phone",
-      "description": "+1-(825)-365-5191"
+      "description": "(825)-365-5191"
     },
     {
       "iconType": "email",
