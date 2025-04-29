@@ -2,8 +2,9 @@ import React from 'react';
 import { baseText } from './Styling_Global.jsx';
 
 // Theme definitions - using only bright theme now
-const bTheme = {content: '#011962', bg: '#FFFFFF'};
-const hTheme = {hdText: 'text-[#011962]', kwText: 'text-blue-600', bg: 'bg-[#F3F4F6]'};
+const subheading_color = 'text-[#7e191b]';
+const bTheme = {content: 'black', bg: '#FFFFFF'};
+const hTheme = {hdText: 'text-black', kwText: subheading_color, bg: 'bg-[#fffbf7]'};
 
 // Typography scale
 const heading_name = `${baseText.heading_4xl}`;
@@ -51,10 +52,8 @@ export const LAYOUT = {
   contentContainer: "flex flex-col w-full h-full",
   // Single column with full width
   gridCol: `w-full ${baseLayout.gridCol} ${baseLayout.mainColor_bg} items-center`,
-  
   // Header row
   headerRow: `w-full flex flex-col ${hTheme.bg} px-6 justify-center`,
-  
   // Common spacing and layout
   gridItem: "grid grid-cols-1 gap-1",
   sectionContainer_main: `${textBase} ${baseLayout.mainColor_text} w-full mt-2`,
@@ -92,7 +91,7 @@ export const EDUCATION = {
   educationContainer: `${LAYOUT.sectionContainer_main}`,
   educationGrid: `${LAYOUT.gridItem}`,
   educationItem: `grid grid-cols-[auto_1fr] gap-4`,
-  educationDegree: `${heading_subsection} text-blue-600 inline-block`,
+  educationDegree: `${heading_subsection} ${subheading_color} inline-block`,
   educationInlineRow: `flex flex-wrap items-center justify-between`,
   educationPeriod: `${baseLayout.align_fc}`,
   educationIcon: `${LAYOUT.iconStyle}`,
@@ -122,7 +121,7 @@ export const SERVICES = {
   serviceGrid: `grid grid-cols-[1fr_6fr] gap-4`, // 2-column grid where right column is 3x wider
   serviceTitleColumn: ``,
   serviceDescriptionColumn: ``,
-  serviceTitle: `${heading_subsection} text-blue-600`,
+  serviceTitle: `${heading_subsection} ${subheading_color}`,
   serviceDescription: ``,
 };
 
@@ -130,7 +129,7 @@ export const REFERENCES = {
   referenceContainer: `${LAYOUT.sectionContainer_main}`,
   referenceGrid: `grid grid-cols-4`,
   referenceItem: ``,
-  referenceName: `${heading_subsection} text-blue-600`,
+  referenceName: `${heading_subsection} ${subheading_color}`,
   referencePosition: `italic`, 
   referenceInstitution: ``,
   referenceLocation: ``,
@@ -150,7 +149,7 @@ export const WORK_EXPERIENCE = {
   workContainer: `${LAYOUT.sectionContainer_main}`,
   workGrid: `${LAYOUT.gridItem}`,
   workItem: ``,
-  workTitle: `${heading_subsection} text-blue-600`,
+  workTitle: `${heading_subsection} ${subheading_color}`,
   workIcon: `${LAYOUT.iconStyle}`,
   workCompany: `italic`,
   workList: `${LAYOUT.listStyle}`,
@@ -161,7 +160,7 @@ export const PUBLICATIONS = {
   publicationContainer: `${LAYOUT.sectionContainer_main}`,
   publicationGrid: `${LAYOUT.gridItem}`,
   publicationItem: `mb-0 pb-1 border-b border-dashed border-gray-300 w-full`,
-  publicationTitle: `${heading_subsection} text-blue-600`,
+  publicationTitle: `${heading_subsection} ${subheading_color}`,
   publicationJournal: ``,
   publicationUrl: `font-normal `, // Added style for URL
   publicationAuthors: `italic`,

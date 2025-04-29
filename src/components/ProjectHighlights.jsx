@@ -36,13 +36,13 @@ const ProjectItem = ({ title, objective, responsibilities, tools, impact, styles
   </div>
 );
 
-const ProjectHighlights = ({ projects, position }) => {
+const ProjectHighlights = ({ projects, position, title }) => {
   if (!projects || projects.length === 0) return null; 
   const styles = useStyle();
   const { SectionTitle, PROJECTHIGHLIGHTS } = styles;
   return (
     <div className={PROJECTHIGHLIGHTS.projecthighlightContainer}>
-      <SectionTitle position={position}>Project Highlights</SectionTitle>
+      <SectionTitle position={position}>{title || 'Project Highlights'}</SectionTitle>
       <div className={PROJECTHIGHLIGHTS.projecthighlightGrid}>
         {projects.map((project, index) => (
           <ProjectItem

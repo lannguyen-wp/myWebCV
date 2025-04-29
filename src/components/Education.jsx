@@ -35,13 +35,13 @@ const EducationItem = ({ degree, period, institution, location, years, styles })
   </div>
 );
 
-const Education = ({ education, position }) => {
+const Education = ({ education, position, title }) => {
   if (!education || education.length === 0) return null;
   const styles = useStyle();
   const { SectionTitle, EDUCATION } = styles;
   return (
     <div className={EDUCATION.educationContainer}>
-      <SectionTitle position={position}>Education</SectionTitle>
+      <SectionTitle position={position}>{title || 'Education'}</SectionTitle>
       <div className={EDUCATION.educationGrid}>
         {education.map((item, index) => (
           <EducationItem 

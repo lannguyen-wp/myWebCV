@@ -1,7 +1,7 @@
 import React from 'react';
 import { useStyle } from '../styles/Styling_Context';
 
-const ProfessionalServices = ({ services, position }) => {
+const ProfessionalServices = ({ services, position, title }) => {
   if (!services || services.length === 0) return null;
   
   const styles = useStyle();
@@ -9,7 +9,7 @@ const ProfessionalServices = ({ services, position }) => {
   
   return (
     <div className={SERVICES.serviceContainer}>
-      <SectionTitle position={position}>Professional Services</SectionTitle>
+      <SectionTitle position={position}>{title || 'Professional Services'}</SectionTitle>
       
       <div className={SERVICES.serviceList}>
         {services.map((serviceGroup, index) => (

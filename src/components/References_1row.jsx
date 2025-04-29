@@ -2,7 +2,7 @@ import React from 'react';
 import { useStyle } from '../styles/Styling_Context.jsx';
 import { Icon } from '../styles/Styling_Global.jsx';
 
-const References = ({ references, position }) => {
+const References = ({ references, position, title }) => {
   if (!references || references.length === 0) return null;
   
   const styles = useStyle();
@@ -10,7 +10,7 @@ const References = ({ references, position }) => {
   
   return (
     <div className={REFERENCES.referenceContainer}>
-      <SectionTitle position={position}>References</SectionTitle>
+      <SectionTitle position={position}>{title || 'References'}</SectionTitle>
       <div className={REFERENCES.referenceGrid}>
         {references.map((reference, index) => (
           <div key={index} className={REFERENCES.referenceItem}>

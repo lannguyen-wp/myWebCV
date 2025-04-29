@@ -4,6 +4,7 @@ import { useStyle } from '../styles/Styling_Context';
 const Header = ({ personalInfo }) => {
   // Handle both array and object formats for backward compatibility
   const info = Array.isArray(personalInfo) ? personalInfo[0] : personalInfo;
+
   const styles = useStyle();
   const { HEADER } = styles;
   return (

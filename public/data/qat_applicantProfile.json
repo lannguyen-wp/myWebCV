@@ -1,0 +1,29 @@
+{
+  "personalInfo": {
+    "name": "Quynh Anh (Anne) Truong",
+    "title": "Title 1 | Title 2 | Title 3",
+    "title_academic": "Finance Analyst | Research Fund Administration | Budget & Compliance"
+  },
+  "contact": [
+    {
+      "iconType": "phone",
+      "description": "(825)-365-0410"
+    },
+    {
+      "iconType": "email",
+      "description": "quynhanhtruong@gmail.com"
+    },
+    {
+      "iconType": "location",
+      "description": "Calgary, AB, Canada"
+    },
+    {
+      "iconType": "link",
+      "label": "Linkedin",
+      "url": "www.linkedin.com/in/quynhanh-truong/"
+    }
+  ],
+  "profile": {
+    "description": "Accomplished Finance Analyst with extensive experience in research fund administration, budgeting, compliance, and reporting within post-secondary institutions. Proven ability to deliver accurate reporting, optimize financial processes and support complex research projects. Recognized for strong work ethic, effective communication, and cross-functional collaboration."
+  }
+}

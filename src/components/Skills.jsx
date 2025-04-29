@@ -9,13 +9,13 @@ const SkillItem = ({ skill, styles }) => (
   </div>
 );
 
-const Skills = ({ skills, position }) => {
+const Skills = ({ skills, position, title }) => {
   if (!skills || skills.length === 0) return null;
   const styles = useStyle();
   const { SectionTitle, SKILLS } = styles;
   return (
     <div className={SKILLS.skillContainer}>
-      <SectionTitle position={position}>Skills</SectionTitle>
+      <SectionTitle position={position}>{title || 'Skills'}</SectionTitle>
       <div className={SKILLS.skillGrid}>
         {skills.map((skill, index) => (
           <SkillItem key={index} skill={skill} styles={SKILLS}/>

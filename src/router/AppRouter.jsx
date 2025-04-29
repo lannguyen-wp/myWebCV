@@ -6,7 +6,9 @@ import CV_Web from '../pages/CV_Web.jsx';
 import CV_Private_1p_A4 from '../pages/CV_Private_1p_A4.jsx';
 import CV_Private_2p_A4 from '../pages/CV_Private_2p_A4.jsx';
 import CV_Academic_A4 from '../pages/CV_Academic_A4.jsx';
+import QAT_CV_1col_A4 from '../pages/QAT_CV_1col_A4.jsx';
 import Cover_Letter, { CoverLetterContext } from '../pages/Cover_Letter.jsx';
+import GeminiTest from '../pages/GeminiTest.jsx';
 
 // Navigation component with export button and dropdown
 const Navigation = () => {
@@ -29,8 +31,12 @@ const Navigation = () => {
         return 'Private 2-Page CV (A4)';
       case '/cv-academic-a4':
         return 'Academic CV (A4)';
+      case '/qat-cv-1col-a4':
+        return 'QAT: 1-col CV (A4)';
       case '/cover-letter':
         return 'Cover Letter';
+      case '/gemini-test':
+        return 'Gemini Test';
       default:
         return 'Select CV Template';
     }
@@ -114,12 +120,20 @@ const Navigation = () => {
           break-after: avoid;
         }
         [id^="cv-content"] {
-          transform: scale(0.95);
+          transform: scale(0.90);
           position: relative;
           max-height: 297mm;
           overflow: hidden;
           box-sizing: border-box;
         }
+
+        [id^="cover-letter-content"] {
+        transform: scale(0.90);
+        position: relative;
+        max-height: 297mm;
+        overflow: hidden;
+        box-sizing: border-box;
+      }
       }
     `,
   });
@@ -136,7 +150,7 @@ const Navigation = () => {
             <span>Export to PDF</span>
           </button>
         </div>
-        
+
         {/* Dropdown menu */}
         <div className="mr-2 relative">
           <button 
@@ -180,11 +194,25 @@ const Navigation = () => {
                 Academic CV (A4)
               </Link>
               <Link 
+                to="/qat-cv-1col-a4" 
+                className="block px-4 py-2 text-center text-gray-800 hover:bg-blue-500 hover:text-white"
+                onClick={toggleDropdown}
+              >
+                QAT: 1-col CV (A4)
+              </Link>
+              <Link 
                 to="/cover-letter" 
                 className="block px-4 py-2 text-center text-gray-800 hover:bg-blue-500 hover:text-white"
                 onClick={toggleDropdown}
               >
                 Cover Letter
+              </Link>
+              <Link 
+                to="/gemini-test" 
+                className="block px-4 py-2 text-center text-gray-800 hover:bg-blue-500 hover:text-white"
+                onClick={toggleDropdown}
+              >
+                Gemini Test
               </Link>
             </div>
           )}
@@ -198,19 +226,19 @@ const Navigation = () => {
 // Since Navigation is now using useLocation, we need to place it inside Router context
 const AppRouterContent = () => {
   return (
-    <>
+    <StyleProvider>
       <Navigation />
-      <StyleProvider>
-        <Routes>
-          <Route path="/" element={<CV_Web />} />
-          <Route path="/cv-web" element={<CV_Web />} />
-          <Route path="/cv-private-1p-a4" element={<CV_Private_1p_A4 />} />
-          <Route path="/cv-private-2p-a4" element={<CV_Private_2p_A4 />} />
-          <Route path="/cv-academic-a4" element={<CV_Academic_A4 />} />
-          <Route path="/cover-letter" element={<Cover_Letter />} />
-        </Routes>
-      </StyleProvider>
-    </>
+      <Routes>
+        <Route path="/" element={<CV_Web />} />
+        <Route path="/cv-web" element={<CV_Web />} />
+        <Route path="/cv-private-1p-a4" element={<CV_Private_1p_A4 />} />
+        <Route path="/cv-private-2p-a4" element={<CV_Private_2p_A4 />} />
+        <Route path="/cv-academic-a4" element={<CV_Academic_A4 />} />
+        <Route path="/qat-cv-1col-a4" element={<QAT_CV_1col_A4 />} />
+        <Route path="/cover-letter" element={<Cover_Letter />} />
+        <Route path="/gemini-test" element={<GeminiTest />} />
+      </Routes>
+    </StyleProvider>
   );
 };
 

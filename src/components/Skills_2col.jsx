@@ -1,7 +1,7 @@
 import React from 'react';
 import { useStyle } from '../styles/Styling_Context';
 
-const Skills = ({ skills, position }) => {
+const Skills = ({ skills, position, title }) => {
   if (!skills || skills.length === 0) return null;
   
   const styles = useStyle();
@@ -9,7 +9,7 @@ const Skills = ({ skills, position }) => {
   
   return (
     <div className={SKILLS.skillContainer}>
-      <SectionTitle position={position}>Skills</SectionTitle>
+      <SectionTitle position={position}>{title || 'Skills'}</SectionTitle>
       {/* Simple list with CSS Grid for 2 columns */}
       <ul className={SKILLS.skillList}>
         {skills.map((skill, index) => (

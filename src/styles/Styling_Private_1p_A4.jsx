@@ -10,7 +10,7 @@ const hTheme = {hdText: 'text-[#011962]', kwText: 'text-green-700', bg: 'bg-[#F3
 const heading_name = `${baseText.heading_4xl}`;
 const heading_title = `${baseText.heading_2xl}`;
 const heading_section = `${baseText.heading_2xl}`;
-const heading_subsection = `${baseText.heading_sm}`;
+const heading_subsection = `${baseText.heading_sm} text-green-700`;
 const textBase = `${baseText.baseText_sm}`;
 
 // Get styles for each column based on selected themes

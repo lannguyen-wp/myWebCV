@@ -11,13 +11,10 @@ export default {
   plugins: [],
   safelist: [
     'text-[#FFFFFF]',
-    'text-[#011962]', 
-    'border-[#FFFFFF]',
-    'border-[#011962]',
-    'bg-[#FFFFFF]',
+    'text-[#011962]',
     'bg-[#61584F]',
-    'bg-[#F3F4F6]',
-    'bg-[#E1E1E1]',
-    'bg-[#F5F5F5]'
+    'bg-[#FFFFFF]',
+    'border-[#FFFFFF]',
+    'border-[#011962]'
   ],
 }

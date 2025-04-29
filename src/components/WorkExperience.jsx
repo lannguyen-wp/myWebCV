@@ -29,13 +29,13 @@ const WorkItem = ({ title, company, location, years, responsibilities, styles })
   </div>
 );
 
-const WorkExperience = ({ workExperience, position }) => {
+const WorkExperience = ({ workExperience, position, title }) => {
   if (!workExperience || workExperience.length === 0) return null;
   const styles = useStyle();
   const { SectionTitle, WORK_EXPERIENCE } = styles;
   return (
     <div className={WORK_EXPERIENCE.workContainer}>
-      <SectionTitle position={position}>Professional Experience</SectionTitle>
+      <SectionTitle position={position}>{title || 'Professional Experience'}</SectionTitle>
       <div className={WORK_EXPERIENCE.workGrid}>
         {workExperience.map((item, index) => (
           <WorkItem 

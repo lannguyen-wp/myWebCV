@@ -4,13 +4,13 @@ import { baseText } from './Styling_Global.jsx';
 // Theme definitions
 const dTheme = {content: '#FFFFFF', bg: '#61584F'};
 const bTheme = {content: '#011962', bg: '#FFFFFF'};
-const hTheme = {hdText: 'text-[#011962]', kwText: 'text-blue-500', bg: 'bg-[#F3F4F6]'};
+const hTheme = {hdText: 'text-[#011962]', kwText: 'text-green-700', bg: 'bg-[#F3F4F6]'};
 
 // Typography scale
 const heading_name = `${baseText.heading_4xl}`;
 const heading_title = `${baseText.heading_2xl}`;
 const heading_section = `${baseText.heading_2xl}`;
-const heading_subsection = `${baseText.heading_sm}`;
+const heading_subsection = `${baseText.heading_sm} text-green-700`;
 const textBase = `${baseText.baseText_sm}`;
 
 // Get styles for each column based on selected themes
@@ -141,7 +141,7 @@ export const REFERENCES = {
   referenceContainer: `${LAYOUT.sectionContainer_rt}`,
   referenceGrid: `${LAYOUT.gridItem}`,
   referenceItem: ``,
-  referenceName: `${heading_subsection}`,
+  referenceName: `${heading_subsection} text-orange-300`,
   referencePosition: `italic`,
   referenceInstitution: ``,
   referenceLocation: ``,
@@ -161,7 +161,7 @@ export const WORK_EXPERIENCE = {
   workContainer: `${LAYOUT.sectionContainer_lt}`,
   workGrid: `${LAYOUT.gridItem}`,
   workItem: ``,
-  workTitle: `${heading_subsection} text-blue-500`,
+  workTitle: `${heading_subsection}`,
   workIcon: `${LAYOUT.iconStyle}`,
   workCompany: `italic`,
   workList: `${LAYOUT.listStyle}`,
@@ -172,7 +172,7 @@ export const PUBLICATIONS = {
   publicationContainer: `${LAYOUT.sectionContainer_lt}`,
   publicationGrid: `${LAYOUT.gridItem}`,
   publicationItem: `mb-0 pb-2 border-b border-dashed border-gray-300 w-full`,
-  publicationTitle: `${heading_subsection} text-blue-500`,
+  publicationTitle: `${heading_subsection}`,
   publicationJournal: `font-bold`,
   publicationAuthors: `italic`,
   publicationFooter: `${baseLayout.align_fc} justify-between`,

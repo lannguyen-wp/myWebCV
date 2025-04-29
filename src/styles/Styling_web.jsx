@@ -3,13 +3,7 @@ import { baseText } from './Styling_Global.jsx';  // Import baseText directly
 
 const dTheme = {content: '#FFFFFF', bg: '#61584F'};
 const bTheme = {content: '#011962', bg: '#FFFFFF'};
-const hTheme = {hdText: 'text-[#011962]', kwText: 'text-blue-500', bg: 'bg-[#F3F4F6]'};
-
-const heading_name = `${baseText.heading_6xl}`;
-const heading_title = `${baseText.heading_2xl}`;
-const heading_section = `${baseText.heading_4xl}`;
-const heading_subsection = `${baseText.heading_lg}`;
-const textBase = `${baseText.baseText_lg}`;
+const hTheme = {hdText: 'text-[#011962]', kwText: 'text-green-700', bg: 'bg-[#F3F4F6]'};
 
 // Get styles for each column based on selected themes
 const getThemeStyles = (theme) => {
@@ -35,13 +29,19 @@ export const baseLayout = {
   rtColor_text: rtStyles.text,
   rtColor_border: rtStyles.border,
   // Header styles
-  hdColor_text: `${hTheme.text}`,
-  hdColor_bg: `${hTheme.bg}`,
-  kwColor_text: `${hTheme.kwText}`,
+  hdColor_text: hTheme.hdText,
+  hdColor_bg: hTheme.bg,
+  kwColor_text: hTheme.kwText,
   // Alignment styles
   align_fs: "flex items-start",
   align_fc: "flex items-center",
 }
+
+const heading_name = `${baseText.heading_6xl}`;
+const heading_title = `${baseText.heading_2xl}`;
+const heading_section = `${baseText.heading_4xl}`;
+const heading_subsection = `${baseText.heading_lg} text-green-700`;
+const textBase = `${baseText.baseText_lg}`;
 
 const hyperlink = `${baseText.textURL}`;
 const sectionTitle = `${heading_section} border-b-4 pb-2 mb-2 w-full`;

@@ -3,7 +3,7 @@ import { Icon } from '../styles/Styling_Global.jsx';
 import { useStyle } from '../styles/Styling_Context.jsx';
 
 // Individual education item component with 2-column layout
-const EducationItem = ({ degree, period, institution, location, years, styles }) => (
+const EducationItem = ({ degree, period, institution, location, years, styles, honor }) => (
   <div className={`${styles.educationItem}`}>
     {/* Left Column: Date with icon */}
     <div className={styles.educationYearColumn}>
@@ -19,11 +19,21 @@ const EducationItem = ({ degree, period, institution, location, years, styles })
       <div className={styles.educationInlineRow}>
         {/* Degrees */}
         {Array.isArray(degree) ? (
-          <span className={styles.educationDegree}>
-            {degree.join(', ')}
-          </span>
+          <div className={styles.educationDegree}>
+            {degree.map((item, idx) => (
+              <div key={idx}>{item}</div>
+            ))}
+            {honor && (
+              <span style={{ fontWeight: 'normal', fontStyle: 'italic', color: 'black' }}> {honor}</span>
+            )}
+          </div>
         ) : (
-          <span className={styles.educationDegree}>{degree}</span>
+          <div className={styles.educationDegree}>
+            <span>{degree}</span>
+            {honor && (
+              <span style={{ fontWeight: 'normal', fontStyle: 'italic', color: 'black' }}> {honor}</span>
+            )}
+          </div>
         )}
         
         {/* Institution and location combined with comma */}
@@ -36,18 +46,19 @@ const EducationItem = ({ degree, period, institution, location, years, styles })
   </div>
 );
 
-const Education = ({ education, position }) => {
+const Education = ({ education, position, title }) => {
   if (!education || education.length === 0) return null;
   const styles = useStyle();
   const { SectionTitle, EDUCATION } = styles;
   return (
     <div className={EDUCATION.educationContainer}>
-      <SectionTitle position={position}>Education</SectionTitle>
+      <SectionTitle position={position}>{title || 'Education'}</SectionTitle>
       <div className={EDUCATION.educationGrid}>
         {education.map((item, index) => (
           <EducationItem 
             key={index}
             degree={item.degree}
+            honor={item.honor}
             period={item.period}
             years={item.years}
             institution={item.institution}

@@ -21,13 +21,13 @@ const PublicationItem = ({ title, journal, authors, year, link, styles }) => (
   </div>
 );
 
-const Publications = ({ publications, position }) => {
+const Publications = ({ publications, position, title }) => {
   if (!publications || publications.length === 0) return null;
   const styles = useStyle();
   const { SectionTitle, PUBLICATIONS } = styles;
   return (
     <div className={PUBLICATIONS.publicationContainer}>
-      <SectionTitle position={position}>Publications</SectionTitle>
+      <SectionTitle position={position}>{title || 'Publications'}</SectionTitle>
       <div className={PUBLICATIONS.publicationGrid}>
         {publications.map((item, index) => (
           <PublicationItem 

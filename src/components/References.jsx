@@ -26,13 +26,13 @@ const ReferenceItem = ({ name, position, institution, location, phone, email, st
   </div>
 );
 
-const References = ({ references, position }) => {
+const References = ({ references, position, title }) => {
   if (!references || references.length === 0) return null;
   const styles = useStyle();
   const { SectionTitle, REFERENCES } = styles;
   return (
     <div className={REFERENCES.referenceContainer}>
-      <SectionTitle position={position}>References</SectionTitle>
+      <SectionTitle position={position}>{title || 'References'}</SectionTitle>
       <div className={REFERENCES.referenceGrid}>
         {references.map((item, index) => (
           <ReferenceItem 
