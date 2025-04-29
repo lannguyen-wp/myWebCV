@@ -1,6 +1,9 @@
 import express from 'express';
 import fetch from 'node-fetch';
 import cors from 'cors';
+import dotenv from 'dotenv';
+
+dotenv.config(); // Load environment variables from .env file
 
 console.log('\n\n*** STARTING GEMINI PROXY SERVER ***\n\n');
 
@@ -24,7 +27,12 @@ app.use((req, res, next) => {
   next();
 });
 
-const GEMINI_API_KEY = 'AIzaSyCT36EzWAyl_niwBxIhc7MUp3FFVA-gr6k';
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY; // Load API key from environment variable
+
+if (!GEMINI_API_KEY) {
+  console.error('Error: GEMINI_API_KEY is not set in the environment variables.');
+  process.exit(1);
+}
 
 // Add a test endpoint to verify the server is running
 app.get('/', (req, res) => {
